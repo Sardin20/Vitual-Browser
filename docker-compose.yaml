@@ -1,11 +1,11 @@
 version: "3"
 services:
   neko:
-    image: "sardin20/vbrowser:v1"
+    image: "sardin20/brave:latest"
     restart: "unless-stopped"
     shm_size: "2gb"
     ports:
-      - "8082:8082"
+      - "5050:5050"
       - "52000-52100:52000-52100/udp"
     environment:
       NEKO_SCREEN: 1920x1080@30
